@@ -9,7 +9,7 @@ moviepy>=1.0.3
 Pillow>=10.0.0
 
 # AI Integration
-google-generativeai>=0.3.0
+google-genai
 
 # Caching & Storage
 redis>=5.0.0
@@ -20,4 +20,5 @@ requests>=2.31.0
 python-multipart>=0.0.6
 
 # Development
+
 watchdog>=3.0.0  # For auto-reload
