@@ -109,7 +109,6 @@ async def infer(
         
         response_data = {
             "prediction": response.text,
-            "latency_seconds": round(latency, 4)
         }
         
         return JSONResponse(content=response_data)
@@ -133,4 +132,5 @@ if __name__ == "__main__":
     # For production, it's recommended to use a WSGI server like Gunicorn:
     # gunicorn -w 4 -k uvicorn.workers.UvicornWorker app:app
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
 
