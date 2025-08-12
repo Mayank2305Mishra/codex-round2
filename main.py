@@ -102,8 +102,6 @@ async def infer(
         # Combine the user's prompt with the uploaded video for the model
         response = client.models.generate_content(model='gemini-2.5-flash', contents=[f"{analysis_prompt}\n\n{prompt}", video_file])
 
-        logger.info(f"Model generation latency: {latency:.4f} seconds")
-
         # Return the model's text response and latency in a JSON object
         logger.info("Successfully generated response from model.")
         
@@ -132,5 +130,6 @@ if __name__ == "__main__":
     # For production, it's recommended to use a WSGI server like Gunicorn:
     # gunicorn -w 4 -k uvicorn.workers.UvicornWorker app:app
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
 
 
