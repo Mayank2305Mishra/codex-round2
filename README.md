@@ -14,7 +14,7 @@ Codex is an advanced, agentic chat assistant for visual understanding. It proces
 -----
 
 ## curl for large videos:
-curl -X POST "https://your-deployed-api-endpoint.com/analyze" \
+curl -X POST "https://codex-round2.onrender.com/infer" \
      -H "Content-Type: multipart/form-data" \
      -F "video=@/path/to/your/video.mp4" \
      -F "query=What are the main events in this video?"
