@@ -74,7 +74,7 @@ GOOGLE_API_KEY="YOUR_API_KEY_HERE"
 **5. Run the Application:**
 
 ```bash
-streamlit run app.py
+uvicorn main:app --reload
 ```
 
 Your browser should automatically open to the application.
