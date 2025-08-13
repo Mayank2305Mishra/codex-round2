@@ -26,7 +26,8 @@ curl -X POST "https://your-deployed-api-endpoint.com/analyze" \
 
 Experience the power of Codex firsthand. Interact with the live application here:
 
-**[https://codex-video-analyzer.streamlit.app/](https://codex-video-analyzer.streamlit.app/)**
+**[https://codex-round2.onrender.com/docs](https://codex-round2.onrender.com/docs)**
+Use the /docs to try out the video analysis model
 
 -----
 
